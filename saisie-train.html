@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="tab.css">
+
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Saisie du train</h1>
+
+        </header>
+
+        <div class="container">
+
+            <nav>
+                <button class="button"><a href="#"></a> Acceuil</button>
+                <button class="button"><a href="#"></a> Se loguer/Se délogger</button>
+                <button class="button"><a href="#"></a> Saisie du train</button>
+                <button class="button"><a href="#"></a> Liste des trains</buttoni>
+                <button class="button"><a href="#"></a> Purge de fichiers</button>
+                <button class="button"><a href="#"></a> Wifi</button>
+                <button class="button"><a href="#"></a> Configuration</button>
+                <button class="button"><a href="#"></a> Quitter</button>
+            </nav>
+
+
+            <form  class="saisie-donnee" action="saisie-wgs.html">
+
+                <div class="radio-button">
+                   <div class="radio-dk">
+                       <input id="radio-dk" type="radio" checked><p>  Usine de Dunkerque</p>
+                   </div>
+
+                   <div class="radio-mk">
+                    <input id="radio-mk" type="radio"><p>Usine de Mardyck</p>
+                </div>
+
+                </div>
+
+         <div class="ligne1">
+
+                <div class="voie">
+                  <label for=""> Voie</label></br>
+                  <input  id="voie" type="number" maxlength="3">
+                  
+                </div>
+
+                <div class="date">
+                    <label for=""> date</label></br>
+                    <input id="date" type="date">
+                  </div>
+  
+                  <div class="heure">
+                    <label for="">Heure</label></br>
+                    <input id="heure" type="time">
+                  </div>
+          </div>
+
+
+          <div class="ligne2">
+
+                  <div class="Borne">
+                    <label for="">Borne</label></br>
+                    <input id="borne" type="text" maxlength="2">
+                  </div>
+
+                  
+                  <div class="vers">
+                    <label for="">Vers</label></br>
+                    <input id="vers" type="text" maxlength="2">
+                  </div>
+         </div>
+
+                  <div class="train">
+                    <label for="">Train</label></br>
+                    <input id="train" type="number">
+                  </div>
+
+                  <div class="button-saisie-wgs">
+
+                     <input id="next" class="button"  type="submit" value="Suivant"  >
+                   
+
+                  </div>
+
+            </form>
+
+            <p id="erreur"></p>
+        
+
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCJVDEYAIIWXKJXThrLay27Py5zFY9474U",
+    authDomain: "saisiemvt.firebaseapp.com",
+    databaseURL: "https://saisiemvt.firebaseio.com",
+    projectId: "saisiemvt",
+    storageBucket: "saisiemvt.appspot.com",
+    messagingSenderId: "233356037988",
+    appId: "1:233356037988:web:85b323c2bb153fdeeab471"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  
+</script>
+            <script src="saisie-train.js"></script>
+    </body>
+</html>
